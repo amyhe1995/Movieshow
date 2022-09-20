@@ -1,10 +1,14 @@
 import React from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
 import Home from './Home'
 import AddMovie from './AddMovie'
 import MovieDetails from './MovieDetails'
+import { getTheMovies } from '../actions/movies'
 
 function App() {
+  const dispatch = useDispatch()
+  dispatch(getTheMovies())
   return (
     <>
       <header className="header">
