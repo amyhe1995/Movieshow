@@ -4,6 +4,7 @@
 
 - react (webpack, babel, etc.)
 - react-router-dom
+- redux
 - express
 - REST.APIS
 - superagent
