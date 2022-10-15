@@ -16,5 +16,4 @@ server/public/styles.css.map
 # Jest coverage report
 coverage/*
 
-# Dotenv env settings
-.env
+

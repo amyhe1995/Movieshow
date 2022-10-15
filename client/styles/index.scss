@@ -6,6 +6,7 @@ body {
   padding: 20px;
   font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
 .movies {
   display: flex;
   flex-wrap: wrap;
@@ -22,4 +23,8 @@ body {
   & img {
     max-width: 100px;
   }
+}
+
+.result img {
+  max-width: 100px;
 }

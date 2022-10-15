@@ -6,3 +6,13 @@ export function fetchAllMovies() {
     return res.body
   })
 }
+
+export function postMovie(movie) {
+  return request
+    .post('/api/v1/movies')
+    .send(movie)
+    .then((res) => {
+      // console.log('RESPONSE', res.body)
+      return res.body
+    })
+}
