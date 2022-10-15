@@ -21,8 +21,7 @@ function App() {
     <>
       <header className="header">
         <h1>The flicks</h1>
-        {isHome !== '/' && <Link to="/">Home</Link>}
-        {isHome !== '/add' && <Link to="/add">Add Movie</Link>}
+        {isHome ? <Link to="/add">Add Movie</Link> : <Link to="/">Home</Link>}
       </header>
       <section className="main">
         <Routes>
