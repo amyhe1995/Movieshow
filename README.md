@@ -10,10 +10,6 @@
 - superagent
 - sqlite3
 
-## Full Stack
-
-you can make changes to both the front and back end. you can add, delete and update user information. In auth Branch, only user can update their infor.
-
 ## Setup
 
 - [ ] Clone this repo, navigate to it, install packages, and start the server with `npm run dev`
