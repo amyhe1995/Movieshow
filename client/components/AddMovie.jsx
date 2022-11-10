@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 
 import { addAMovie } from '../actions/movies'
 import { searchForMovie } from '../apis/imdb'
@@ -12,6 +13,7 @@ function AddMovie() {
   const [results, setResults] = useState([])
 
   const dispatch = useDispatch()
+  const navigate = useNavigate()
 
   const handleSearch = async (evt) => {
     evt.preventDefault()
@@ -26,6 +28,7 @@ function AddMovie() {
 
   const handleAdd = (movie) => {
     dispatch(addAMovie(movie))
+    navigate('/')
   }
 
   return (
